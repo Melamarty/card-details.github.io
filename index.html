@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /*
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    */
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main">
+    <div class="nav">
+      <img src="./images/bg-main-desktop.png" alt="">
+    </div>
+    <div class="bg-front">
+      <img src="./images/bg-card-front.png" alt="">
+      <div class="card-number">0000 0000 0000 0000</div>
+      <div class="name">Full Name</div>
+      <span class="dot"></span>
+      <span class="dot2"></span>
+      <div class="enddate">
+        <span id="ex-mm">00</span >/<span id="ex-yy">00</span>
+      </div>
+    </div>
+    <div class="bg-back">
+      <img src="./images/bg-card-back.png" alt="">
+      <div class="cvc">
+        <span class="cvc">0000</span> 
+      </div>
+    </div>
+    <form class="card-info">
+      <div class="name-number">
+        <label >card holder name</label><br>
+        <input type="text" id="name"><br>
+        <label >card number</label><br>
+        <input type="text" id="card-number"><br>
+        <span id="w-format"></span>
+      </div>
+      <div class="exp-date">
+        <label for="">exp. date(mm/yy)</label><br>
+        <input id="mm"  type="number" placeholder="MM">
+        <input id="yy" type="number" placeholder="YY"><br>
+        <span id="w-blank"></span>
+      </div>
+      <div class="cvc">
+        <label for="">cvc</label><br>
+        <input id="cvc" type="number" placeholder="e.g. 123"><br>
+        <span id="w-blankc"></span>
+      </div>
+    </form>
+    <div class="confirm">
+      <input  id="submit" type="submit" value="Confirm">
+    </div>
+    <figure class="thank">
+      <img src="./images/icon-complete.svg" alt=""><br>
+      <span class="s1">Think You</span><br>
+      <span class="s">with added your card details</span>
+    </figure>
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>
